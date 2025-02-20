@@ -160,9 +160,10 @@ If you used Colab Pro, we are wiling to reimburse that cost, please keep a copy 
 
 - A team of 3-4 people
 - [Team making link](https://docs.google.com/spreadsheets/d/1zg-qIOXIge9w0x10YjUymkymHlJOjiGJqY_3cFd7oRs/edit?usp=sharing)
+- [ADLS Teams (Final)](https://docs.google.com/spreadsheets/d/1vGBLbLMSAZS-xYcblcfqImag0d_RmOlS7y62qcQhb4Q/edit?usp=sharing)
 - [Team Project Requirements](https://docs.google.com/document/d/17XR49GnwWnGpyfBIqOFSyk5p7dhRDmf-pPFy1-VB5FY/edit?usp=sharing)
 - [Past project lists](https://docs.google.com/document/d/1rRIJLxIZMVM3DLf2M_sHNxKYqzXlHxA5vM8Rl5YHehI/edit?usp=sharing)
-- A roadmap meeting with a GTA (not assessed).
+- A roadmap meeting with Aaron ([Booking link](https://calendar.app.google/xZFVka9K1knULMLG9)).
 - Deadline (17th March): **A show me your code lab oral** (assessed).  
 - Deadline (27th March): **Coursework code submission** as a pull request or an open repository on Github (assessed). The PR or repository should also have a clear documentation of the functionality that you have implemented and its corresponding tests. There should also be testing in place.
 - Deadline (27th March, PDF attached in the PR): **6-page Report** (assessed). The report should mainly focus on an evaluation of your implementation. The description of functionality and testing have being described in the PR or code repository already, so this 6-page report should include only the experiments you have designed to explore certain trade-offs and properties of your optimization.
