@@ -109,14 +109,14 @@ Course code: ELEC70109/EE9-AML3-10/EE9-AO25
 
 #### Lecture 9: Network Compression
 
-<!-- - <a href="../../assets/pdf/adls/lecture9.pdf">Slides</a> -->
+- <a href="../../assets/pdf/adls_2025/lecture9.pdf">Slides</a>
 - [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](https://arxiv.org/abs/1803.03635)
 - [SNIP: Single-shot Network Pruning based on Connection Sensitivity](https://arxiv.org/abs/1810.02340)
 - [Progressive Skeletonization: Trimming more fat from a network at initialization](https://arxiv.org/abs/2006.09081)
 
 #### Lecture 10: Network Compression (2)
 
-<!-- - <a href="../../assets/pdf/adls/lecture10.pdf">Slides</a> -->
+- <a href="../../assets/pdf/adls_2025/lecture10.pdf">Slides</a>
 - [Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding](https://arxiv.org/abs/1510.00149)
 - [TinyBERT: Distilling BERT for Natural Language Understanding](https://arxiv.org/abs/1909.10351)
 - [Paying More Attention to Attention: Improving the Performance of Convolutional Neural Networks via Attention Transfer](https://arxiv.org/abs/1612.03928)
