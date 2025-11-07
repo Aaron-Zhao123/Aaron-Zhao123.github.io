@@ -22,17 +22,18 @@ Hello, thanks for visiting my personal Wiki.
 
 I am a computer scientist, and am
 
-* an Assistant Professor (Lecturer, UK) at [Imperial College London](https://www.imperial.ac.uk/people/a.zhao).
+* an Assistant Professor at [Imperial College London](https://www.imperial.ac.uk/people/a.zhao).
 * a Visiting Researcher at the [University of Cambridge](https://www.cst.cam.ac.uk/people/yaz21).
+* a Co-foudner of the [AI Sequrity Company](https://sequrity.ai/)
 * leading the [DeepWok Lab](https://deepwok.github.io/).
-* involved in the [Imperial-X](https://ix.imperial.ac.uk/#our-research) initiative.
-* involved in the [Imperial AI Network](https://www.imperial.ac.uk/artificial-intelligence/about/).
-* involved in the [AI-4-EB Consortium](https://www.imperial.ac.uk/ukri-ai-engineering/members/).
 
 I also hold some other positions as
 
-* a collaborator at the [The Center for Spatial Computational Learning](https://spatialml.net/).
-* an affiliate at the [CaRAML group](https://caraml-group.github.io/).
+* [The Center for Spatial Computational Learning](https://spatialml.net/).
+* [CaRAML group](https://caraml-group.github.io/).
+* [Imperial AI Network](https://www.imperial.ac.uk/artificial-intelligence/about/).
+* [AI-4-EB Consortium](https://www.imperial.ac.uk/ukri-ai-engineering/members/).
+* [AIxSIM](https://aicrosssim.github.io/)
 
 The best way to reach me is always email: a.zhao@imperial.ac.uk.
 
@@ -42,7 +43,7 @@ If you are a student interested in doing research with me or my team, please che
 
 # Quick Bio
 
-I am an Assistant Professor at Imperial College London ([Department wiki](https://www.imperial.ac.uk/people/a.zhao) and [Lab wiki](https://deepwok.github.io/)).
+I am an Assistant Professor at Imperial College London ([Department wiki](https://www.imperial.ac.uk/people/a.zhao) and [Lab wiki](https://deepwok.github.io/)). I also co-founded a startup ([AI Sequrity Company](https://sequrity.ai/)) with [Ilia Shumailov](https://x.com/iliaishacked) and am working on making secure AI agentic flows.
 
 Prior to that, I was a Research Fellow at [St John's College](https://www.joh.cam.ac.uk/), University of Cambridge. I had my PhD studies at the [Computer Lab of the University of Cambridge](https://www.cst.cam.ac.uk/), supervised by [Prof. Robert Mullins](https://www.cl.cam.ac.uk/~rdm34/), and I also finished an MPhil degree in the same lab.
 Before that, I obtained my [Electrical and Electronic Engineering](https://www.imperial.ac.uk/electrical-engineering/) BEng degree from the Imperial College London with my final two years supervised by [Prof. George Constantinides](https://cas.ee.ic.ac.uk/people/gac1/). During my BEng studies, I was tutored by [Dr. Papavassiliou](https://cas.ee.ic.ac.uk/people/dario/).
