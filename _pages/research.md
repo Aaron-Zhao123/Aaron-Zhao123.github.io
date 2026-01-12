@@ -17,8 +17,6 @@ My research focuses on the intersections between hardware, algorithms, and secur
 
 * **Efficient AI**: I am interested in different algorithmic aspects of efficient AI, including efficient training, efficient inference, efficient model search and efficient model deployment with state-of-the-art GenAI models (eg. language and diffusion models).
 
-* **System-level AI Safety**: with the increasing capability of GenAI models and the growing complexity of AI systems, I am interested in projects that focus on the system-level AI safety, including robustness, security, and red-teaming these models to understand new vulnerabilities.
-
 See advice [for students](/students) (this includes internships, undergraduate or master projects, and PhD applicants), and information for collaborators, if you want to contact me for study or collaborations.
 
 I lead the [DeepWok Lab](https://deepwok.github.io/), and most of the research related updates are in the lab wiki.
