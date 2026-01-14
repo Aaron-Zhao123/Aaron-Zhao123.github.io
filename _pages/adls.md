@@ -11,10 +11,9 @@ Course code: ELEC70109/EE9-AML3-10/EE9-AO25
 
 ## Important dates
 
-- ~~7th Feb~~ 14th Feb (extended), Practical submission
-- 9th Feb, Team project sign-up ends
-- ~~10th Feb~~ 17th Feb (extended), Midterm lab oral
-- 17th Mar, Show me your code session
+- 2nd Feb, Team proposal deadline
+- 7th Feb, Practical submission
+- 9th Feb, Midterm lab oral
 - 27th Mar, Report submission and pull request finalization
 
 ---
@@ -23,22 +22,20 @@ Course code: ELEC70109/EE9-AML3-10/EE9-AO25
 
 | Week Number| Date       | Schedule    |
 |------------|------------|-------------|
-| 2          | 16th Jan   | Lectures (1 and 2, Room 407A, 11am-1pm), Team signup starts		|
-| 3          | 20nd Jan 	| Lectures (3 and 4, Room 508B, 10am-noon) and lab sessions (Room 407, 4pm-6pm)	|
-| 4          | 27th Jan 	| lab session (Room 407A, 4pm-6pm)			 										|	
-| 5          | 3rd  Feb  	| lab session (Room 407A, 4pm-6pm)		   									|
-| 5          | 6th  Feb 	| lab session (Room 407A, 11am-1pm)					 							|
-| 6          | 10th Feb 	| lab session (extra) (Room 403B, 4pm-6pm)							  				|
-| 6          | 13th Feb 	| Lectures (5 and 6, Room 407A, 11am-1pm)				 							|
-| 7          | 17th Feb 	| Lectures (7 and 8, Room 508B, 10am-noon)				 							|
-| 7          | 17th Feb 	| Lab oral (extended ddl, room and time tbc)				 							|
-| 7          | 20th Feb 	| Lectures (9 and 10, Room 407A, 11am-1pm)										|
-| 8          | 24th Feb 	| Lectures (11 and 12, Room 407A, 11am-1pm) 									|
-| 8          | 27th Feb 	| Team Project Lab (Project scoping) 		|
-| 9          | 3rd Mar 	  | Team Project Lab 											|
-| 10         | 10th Mar 	| Team Project Lab 											|
-| 11         | 17th Mar 	| Show me your code 										|
-| End of term| 27th Mar 	| Final report and code submission 			|
+| 2          | 15th Jan   | Lectures (1 and 2), Team signup starts		|
+| 3          | 19nd Jan     | Lectures (3 and 4) and lab sessions |
+| 4          | 26th Jan 	| lab session |	
+| 5          | 2nd  Feb  	| lab session |
+| 5          | 5th  Feb 	| lab session |
+| 6          | 9th Feb 	    | lab oral exam |
+| 6          | 12th Feb 	| Lectures (5 and 6)    |
+| 7          | 16th Feb 	| Lectures (7 and 8)    |
+| 7          | 19th Feb 	| Lectures (9 and 10)	|
+| 8          | 23rd Feb 	| Lectures (11 and 12) 	|
+| 8          | 26th Feb 	| Team Project scoping 	|
+| 9          | 2nd Mar 	    | Team Project Lab 		|
+| 10         | 9th Mar 	    | Team Project Lab 		|
+| End of term| 27th Mar 	| Final report and code submission |
 
 ---
 
@@ -55,7 +52,7 @@ Course code: ELEC70109/EE9-AML3-10/EE9-AO25
 - [Troch FX](https://pytorch.org/docs/stable/fx.html)
 - [MASE](https://github.com/DeepWok/mase)
 
-#### Lecture 3: An Introduction to Labs
+<!-- #### Lecture 3: An Introduction to Labs
 
 - <a href="../../assets/pdf/adls_2025/lecture3.pdf">Slides</a>
 
@@ -137,7 +134,7 @@ Course code: ELEC70109/EE9-AML3-10/EE9-AO25
 - <a href="../../assets/pdf/adls_2025/lecture12.pdf">Slides</a>
 - [Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning](https://arxiv.org/abs/2201.12023)
 - [Communication-Efficient Learning of Deep Networks from Decentralized Data](https://arxiv.org/abs/1602.05629)
-- [Horovod: fast and easy distributed deep learning in TensorFlow](https://arxiv.org/abs/1802.05799)
+- [Horovod: fast and easy distributed deep learning in TensorFlow](https://arxiv.org/abs/1802.05799) -->
 
 
 
@@ -152,18 +149,17 @@ If you used Colab Pro, we are wiling to reimburse that cost, please keep a copy 
 
 ##### Practical Submission (30%)
 
-- Deadline (7th Feb, email to a.zhao@imperial.ac.uk): **A Markdown file**: with all answers (plots, tables ...) of the questions and optional questions in labs. The file should be named as `adls_labs_your_college_short_code.md` (eg. `adls_labs_yz10513.md`).
+- Deadline (7th Feb, email to a.zhao@imperial.ac.uk): **A Markdown file**: with all answers (plots, tables ...) of the questions and optional questions in labs. The email title should be "ADLS lab group xx", and the file should be named as `adls_labs_group_xx.md` (eg. `adls_labs_group_0.md`).
 - Corresponding code in your forked repository (will be checked in the lab oral, no submission needed). But you can include code snippets in the submitted markdown file.
-- Deadline (10th Feb) **Lab Oral**.
+- Deadline (9th Feb) **Lab Oral**.
 
 ##### Team Project (70%)
 
 - A team of 3-4 people
-- [Team making link](https://docs.google.com/spreadsheets/d/1zg-qIOXIge9w0x10YjUymkymHlJOjiGJqY_3cFd7oRs/edit?usp=sharing)
-- [ADLS Teams (Final)](https://docs.google.com/spreadsheets/d/1vGBLbLMSAZS-xYcblcfqImag0d_RmOlS7y62qcQhb4Q/edit?usp=sharing)
+- [Team making link](https://docs.google.com/spreadsheets/d/1V-PyviCEKtkrCrCEoJfCUcmA63JEm_VUwxD6Go98UzI/edit?usp=sharing)
+<!-- - [ADLS Teams (Final)](https://docs.google.com/spreadsheets/d/1vGBLbLMSAZS-xYcblcfqImag0d_RmOlS7y62qcQhb4Q/edit?usp=sharing) -->
 - [Team Project Requirements](https://docs.google.com/document/d/17XR49GnwWnGpyfBIqOFSyk5p7dhRDmf-pPFy1-VB5FY/edit?usp=sharing)
 - [Past project lists](https://docs.google.com/document/d/1rRIJLxIZMVM3DLf2M_sHNxKYqzXlHxA5vM8Rl5YHehI/edit?usp=sharing)
-- A roadmap meeting with Aaron ([Booking link](https://calendar.app.google/xZFVka9K1knULMLG9)).
-- Deadline (17th March): **A show me your code lab oral** (assessed).  
+<!-- - A roadmap meeting with Aaron ([Booking link](https://calendar.app.google/xZFVka9K1knULMLG9)). -->
 - Deadline (27th March): **Coursework code submission** as a pull request or an open repository on Github (assessed). The PR or repository should also have a clear documentation of the functionality that you have implemented and its corresponding tests. There should also be testing in place.
 - Deadline (27th March, PDF attached in the PR): **6-page Report** (assessed). The report should mainly focus on an evaluation of your implementation. The description of functionality and testing have being described in the PR or code repository already, so this 6-page report should include only the experiments you have designed to explore certain trade-offs and properties of your optimization.
