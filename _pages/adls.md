@@ -41,14 +41,14 @@ Course code: ELEC70109/EE9-AML3-10/EE9-AO25
 
 #### Lecture 1: Introduction
 
-- <a href="../../assets/pdf/adls_2025/lecture1.pdf">Slides</a>
+- <a href="../../assets/pdf/adls_2026/lecture1.pdf">Slides</a>
 - [Git tutorial](https://jianyicheng-research.notion.site/Git-Tutorial-516864ab8fa04242ad520652744b931f)
 - [Dark Silicon and the End of Multicore Scaling](https://research.cs.wisc.edu/vertical/papers/2011/isca11-darksilicon.pdf)
 - [Managing Wire Delay in Large Chip-Multiprocessor Caches](https://ieeexplore.ieee.org/abstract/document/1551004?casa_token=P5sarPuvBZ4AAAAA:eh8TDWxx89Z04mkFw2KdFrvWhD2raDe_u66ES8e5ZEpxq276zQ0wfs2uE6tWVdQhodRf9lSmAQ)
 
 #### Lecture 2: MASE: Abstractions, Optimizations and Implementations
 
-- <a href="../../assets/pdf/adls_2025/lecture2.pdf">Slides</a>
+- <a href="../../assets/pdf/adls_2026/lecture2.pdf">Slides</a>
 - [Troch FX](https://pytorch.org/docs/stable/fx.html)
 - [MASE](https://github.com/DeepWok/mase)
 
