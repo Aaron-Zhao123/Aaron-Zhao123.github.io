@@ -11,7 +11,7 @@ Course code: ELEC70109/EE9-AML3-10/EE9-AO25
 
 ## Important dates
 
-- 2nd Feb, Team proposal deadline
+- 2nd Feb, [Team making](https://docs.google.com/spreadsheets/d/1V-PyviCEKtkrCrCEoJfCUcmA63JEm_VUwxD6Go98UzI/edit?gid=0#gid=0) deadline
 - 7th Feb, Practical submission
 - 9th Feb, Midterm lab oral
 - 27th Mar, Report submission and pull request finalization
@@ -52,15 +52,15 @@ Course code: ELEC70109/EE9-AML3-10/EE9-AO25
 - [Troch FX](https://pytorch.org/docs/stable/fx.html)
 - [MASE](https://github.com/DeepWok/mase)
 
-<!-- #### Lecture 3: An Introduction to Labs
+#### Lecture 3: An Introduction to Labs
 
-- <a href="../../assets/pdf/adls_2025/lecture3.pdf">Slides</a>
+- <a href="../../assets/pdf/adls_2026/lecture3.pdf">Slides</a>
 
 #### Lecture 4: An Introduction to Labs (2)
 
-- <a href="../../assets/pdf/adls_2025/lecture4.pdf">Slides</a>
+- <a href="../../assets/pdf/adls_2026/lecture4.pdf">Slides</a>
 
-
+<!-- 
 #### Lecture 5: Understanding the workload
 
 - <a href="../../assets/pdf/adls_2025/lecture5.pdf">Slides</a>
@@ -149,9 +149,9 @@ If you used Colab Pro, we are wiling to reimburse that cost, please keep a copy 
 
 ##### Practical Submission (30%)
 
-- Deadline (7th Feb, email to a.zhao@imperial.ac.uk): **A Markdown file**: with all answers (plots, tables ...) of the questions and optional questions in labs. The email title should be "ADLS lab group xx", and the file should be named as `adls_labs_group_xx.md` (eg. `adls_labs_group_0.md`).
+- Deadline (7th Feb, email to a.zhao@imperial.ac.uk): **A Markdown file, submitted as a team**: with all answers (plots, tables ...) of the questions and optional questions in labs. The email title should be "ADLS lab group xx", and the file should be named as `adls_labs_group_xx.md` (eg. `adls_labs_group_0.md`).
 - Corresponding code in your forked repository (will be checked in the lab oral, no submission needed). But you can include code snippets in the submitted markdown file.
-- Deadline (9th Feb) **Lab Oral**.
+- Deadline (9th Feb) **Lab Oral, assessed individually**.
 
 ##### Team Project (70%)
 
