@@ -84,7 +84,6 @@ Course code: ELEC70109/EE9-AML3-10/EE9-AO25
 - [WaveNet: A Generative Model for Raw Audio](https://arxiv.org/abs/1609.03499)
 - [Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356)
 
-<!-- 
 #### Lecture 7: Architectural Optimizations
 
 - <a href="../../assets/pdf/adls_2025/lecture7.pdf">Slides</a>
@@ -104,6 +103,7 @@ Course code: ELEC70109/EE9-AML3-10/EE9-AO25
 - [Neural Architecture Search without Training](https://arxiv.org/abs/2006.04647)
 - [Speedy Performance Estimation for Neural Architecture Search](https://arxiv.org/abs/2006.04492)
 
+<!-- 
 #### Lecture 9: Network Compression
 
 - <a href="../../assets/pdf/adls_2025/lecture9.pdf">Slides</a>
