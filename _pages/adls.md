@@ -120,10 +120,9 @@ Course code: ELEC70109/EE9-AML3-10/EE9-AO25
 - [Fast Algorithms for Convolutional Neural Networks](https://arxiv.org/abs/1509.09308)
 - [EIE: Efficient Inference Engine on Compressed Deep Neural Network](https://arxiv.org/abs/1602.01528)
 
-<!-- 
 #### Lecture 11: Computation Graph and Operator-level Optimization
 
-- <a href="../../assets/pdf/adls_2025/lecture11.pdf">Slides</a>
+- <a href="../../assets/pdf/adls_2026/lecture11.pdf">Slides</a>
 - [TASO: The Tensor Algebra SuperOptimizer for Deep Learning](https://github.com/jiazhihao/TASO)
 - [Tensorflow Grappler](https://www.tensorflow.org/guide/graph_optimization)
 - [TVM: An Automated End-to-End Optimizing Compiler for Deep Learning](https://arxiv.org/abs/1802.04799)
@@ -131,7 +130,7 @@ Course code: ELEC70109/EE9-AML3-10/EE9-AO25
 
 
 #### Lecture 12: Distributed Training and Inference
-- <a href="../../assets/pdf/adls_2025/lecture12.pdf">Slides</a>
+- <a href="../../assets/pdf/adls_2026/lecture12.pdf">Slides</a>
 - [Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning](https://arxiv.org/abs/2201.12023)
 - [Communication-Efficient Learning of Deep Networks from Decentralized Data](https://arxiv.org/abs/1602.05629)
 - [Horovod: fast and easy distributed deep learning in TensorFlow](https://arxiv.org/abs/1802.05799) -->
