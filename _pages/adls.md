@@ -161,4 +161,4 @@ If you used Colab Pro, we are wiling to reimburse that cost, please keep a copy 
 - [Past project lists](https://docs.google.com/document/d/1rRIJLxIZMVM3DLf2M_sHNxKYqzXlHxA5vM8Rl5YHehI/edit?usp=sharing)
 <!-- - A roadmap meeting with Aaron ([Booking link](https://calendar.app.google/xZFVka9K1knULMLG9)). -->
 - Deadline (27th March): **Coursework code submission** as a pull request or an open repository on Github (assessed). The PR or repository should also have a clear documentation of the functionality that you have implemented and its corresponding tests. There should also be testing in place.
-- Deadline (27th March, EoD (midnight), PDF attached in the PR): **4-page Report** (assessed). The report should mainly focus on an evaluation of your implementation. The description of functionality and testing have being described in the PR or code repository already, so this 6-page report should include only the experiments you have designed to explore certain trade-offs and properties of your optimization.
+- Deadline (27th March, EoD (midnight), PDF attached in the PR): **4-page Report** (assessed).
