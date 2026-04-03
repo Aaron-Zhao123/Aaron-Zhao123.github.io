@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<!-- storyline.html -->
+<div class="post storyline-content">
+
+  <!-- Hero: photo left, info right -->
+  <div class="hero-row">
+    {%- if page.profile.image %}
+    <div class="hero-photo">
+      <img class="profile-photo{% if page.profile.circular %} circular{% endif %}" src="{{ page.profile.image | prepend: 'assets/img/' | relative_url }}" alt="Profile photo">
+    </div>
+    {% endif -%}
+    <div class="hero-info">
+      <h1>{{ site.first_name }} {{ site.last_name }}</h1>
+      {% if page.subtitle %}<p class="tagline">{{ page.subtitle }}</p>{% endif %}
+      <div class="social-icons">
+        {% include social.html %}
+      </div>
+      <a href="{{ '/assets/pdf/cv_full.pdf' | relative_url }}" class="cv-download-link">Download CV</a>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  {{ content }}
+
+</div>

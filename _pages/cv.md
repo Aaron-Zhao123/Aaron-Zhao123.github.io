@@ -1,8 +1,6 @@
 ---
 layout: cv
 permalink: /bio/
-title: Bio
-nav: true
-nav_order: 3
+title: CV
 cv_pdf: cv.pdf
 ---

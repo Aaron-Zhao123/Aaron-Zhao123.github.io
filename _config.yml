@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Aaron's Wiki # the website title (if blank, full name will be used instead)
+title: blank # the website title (if blank, full name will be used instead)
 first_name: Aaron
 middle_name: 
 last_name: Zhao
 email: a.zhao@imperial.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A computer scientist, a Machine Learning researcher, and an ordinary coder.
+  Assistant Professor at Imperial College London. Research in Efficient AI, hardware-algorithm co-design, and AI security.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -206,7 +206,6 @@ plugins:
   - jekyll/scholar
   - jekyll-sitemap
   - jekyll-link-attributes
-  - jekyll-twitter-plugin
   - jemoji
 
 # Sitemap settings

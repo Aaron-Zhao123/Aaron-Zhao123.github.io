@@ -1,0 +1,748 @@
+/*******************************************************************************
+ * Storyline theme - minimalist academic personal site
+ ******************************************************************************/
+
+// Override base typography and layout for the storyline design
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+}
+
+// Container override
+.container {
+  max-width: 720px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// ─── Minimal Navbar ──────────────────────────────────────────────────────────
+
+.storyline-nav {
+  border-bottom: 1px solid var(--global-divider-color);
+  padding: 1rem 0;
+  background-color: var(--global-bg-color);
+
+  .nav-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--global-text-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+      font-size: 0.95rem;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+
+      &.active {
+        font-weight: 600;
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  #light-toggle {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: inherit;
+    color: var(--global-text-color);
+    cursor: pointer;
+    font-size: 0.95rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// ─── Hero / Profile Section ──────────────────────────────────────────────────
+
+.hero-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0 2rem;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+
+    &.circular {
+      border-radius: 50%;
+    }
+
+    &:not(.circular) {
+      border-radius: 12px;
+    }
+  }
+}
+
+.hero-info {
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    margin-top: 0;
+    color: var(--global-text-color);
+  }
+
+  .tagline {
+    font-size: 1.05rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.8rem;
+  }
+
+  .social-icons {
+    font-size: 1.3rem;
+    display: flex;
+    gap: 0.8rem;
+
+    a {
+      color: var(--global-text-color);
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--global-theme-color);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .cv-download-link {
+    display: inline-block;
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--global-theme-color);
+    border: 1px solid var(--global-theme-color);
+    border-radius: 4px;
+    padding: 0.2rem 0.7rem;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: var(--global-theme-color);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-info .social-icons {
+    justify-content: center;
+  }
+}
+
+// ─── Storyline Content Sections ──────────────────────────────────────────────
+
+.storyline-content {
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--global-text-color);
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--global-text-color);
+  }
+
+  p {
+    margin-bottom: 1rem;
+    color: var(--global-text-color);
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  a {
+    color: var(--global-theme-color);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// ─── Git-graph timeline ──────────────────────────────────────────────────────
+
+// ─── Git-graph config ────────────────────────────────────────────────────────
+
+$graph-w: 80px;
+$lane-0-x: 17px;
+$lane-1-x: 38px;
+$lane-2-x: 59px;
+$dot-r: 6px;
+$line-w: 2.5px;
+$color-0: var(--global-theme-color);  // purple — main trunk
+$color-1: #059669;                     // green — branch 1
+$color-2: #d97706;                     // amber — branch 2
+
+.git-timeline {
+  margin-top: 1rem;
+}
+
+.git-row {
+  display: flex;
+  align-items: stretch;
+}
+
+// ─── Graph column ────────────────────────────────────────────────────────────
+
+.git-graph {
+  width: $graph-w;
+  flex-shrink: 0;
+  position: relative;
+  min-height: 60px;
+}
+
+// Vertical lane lines — full height by default
+.git-lane {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: $line-w;
+  border-radius: 1px;
+
+  &.lane-0 { left: $lane-0-x - $line-w/2; background: $color-0; }
+  &.lane-1 { left: $lane-1-x - $line-w/2; background: $color-1; }
+  &.lane-2 { left: $lane-2-x - $line-w/2; background: $color-2; }
+
+  &.top-half    { bottom: 50%; }
+  &.bottom-half { top: 50%; }
+}
+
+// Node dots
+.git-dot {
+  position: absolute;
+  width: $dot-r * 2;
+  height: $dot-r * 2;
+  border-radius: 50%;
+  top: 18px;
+  z-index: 2;
+
+  &.lane-0 { left: $lane-0-x - $dot-r; background: $color-0; }
+  &.lane-1 { left: $lane-1-x - $dot-r; background: $color-1; }
+  &.lane-2 { left: $lane-2-x - $dot-r; background: $color-2; }
+}
+
+// SVG connector overlay (for diagonal merge / fork lines)
+.git-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $graph-w;
+  height: 100%;
+  overflow: visible;
+
+  line, path {
+    fill: none;
+    stroke-width: $line-w;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .s0 { stroke: $color-0; }
+  .s1 { stroke: #059669; }
+  .s2 { stroke: #d97706; }
+}
+
+// ─── Spacer rows ─────────────────────────────────────────────────────────────
+
+.git-row.spacer {
+  .git-graph { min-height: 40px; }
+}
+
+// ─── Content column ──────────────────────────────────────────────────────────
+
+.git-content {
+  flex: 1;
+  min-width: 0;
+  padding: 0.4rem 0 1.2rem 0;
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+}
+
+.git-content .timeline-logo {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-top: 2px;
+
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+}
+
+.git-content .timeline-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.git-content .timeline-period {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: $color-0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.1rem;
+}
+
+.git-content .timeline-role {
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+  color: var(--global-text-color);
+  line-height: 1.3;
+}
+
+.git-content .timeline-detail {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  line-height: 1.45;
+}
+
+// ─── Mobile ──────────────────────────────────────────────────────────────────
+
+@media (max-width: 480px) {
+  .git-content .timeline-logo {
+    width: 32px; height: 32px;
+    img { width: 32px; height: 32px; }
+  }
+}
+
+// Awards list
+.awards-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+
+    &::before {
+      content: "\f005";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 0.7rem;
+      position: absolute;
+      left: 0;
+      top: 0.35rem;
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// Initiatives grid
+.initiatives-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+
+  a {
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--global-text-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+// Teaching grid
+.teaching-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+
+  .teaching-card {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
+    padding: 0.6rem 0.9rem;
+    text-decoration: none;
+    color: var(--global-text-color);
+    transition: border-color 0.2s ease;
+    flex: 1;
+    min-width: 220px;
+
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .teaching-course-code {
+      font-size: 0.75rem;
+      color: var(--global-text-color-light);
+    }
+
+    .teaching-course-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+// ─── Publications Page ───────────────────────────────────────────────────────
+
+.publications-page {
+  padding-top: 2rem;
+
+  h1.page-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--global-text-color);
+  }
+}
+
+.publications {
+  margin-top: 1rem;
+
+  h2.year {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--global-text-color-light);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 0.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+// Publication card
+.pub-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+
+  .pub-thumbnail {
+    flex-shrink: 0;
+    width: 120px;
+    border-radius: 6px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+  }
+
+  .pub-info {
+    flex: 1;
+    min-width: 0;
+
+    .title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 0.25rem;
+      color: var(--global-text-color);
+
+      .venue-tag {
+        display: inline-block;
+        font-size: 0.65rem;
+        font-weight: 700;
+        padding: 0.1rem 0.4rem;
+        border-radius: 3px;
+        color: #fff;
+        vertical-align: middle;
+        margin-left: 0.4rem;
+        letter-spacing: 0.03em;
+        position: relative;
+        top: -1px;
+
+        &.venue-ml { background-color: #2563eb; }
+        &.venue-cv { background-color: #059669; }
+        &.venue-security { background-color: #dc2626; }
+        &.venue-systems { background-color: #7c3aed; }
+        &.venue-nlp { background-color: #0891b2; }
+        &.venue-journal { background-color: #d97706; }
+        &.venue-preprint { background-color: #9ca3af; }
+        &.venue-workshop { background-color: #6b7280; }
+        &.venue-thesis { background-color: #4b5563; }
+        &.venue-patent { background-color: #78716c; }
+        &.venue-graph { background-color: #0d9488; }
+        &.venue-ai { background-color: #4f46e5; }
+      }
+    }
+
+    .author {
+      font-size: 0.85rem;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.2rem;
+      line-height: 1.4;
+
+      em {
+        font-style: normal;
+        font-weight: 600;
+        color: var(--global-text-color);
+      }
+
+      a {
+        color: var(--global-text-color-light);
+        border-bottom: 1px dashed var(--global-divider-color);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--global-theme-color);
+          border-bottom-style: solid;
+        }
+      }
+
+      > span.more-authors {
+        color: var(--global-text-color-light);
+        border-bottom: 1px dashed var(--global-text-color-light);
+        cursor: pointer;
+        &:hover {
+          color: var(--global-text-color);
+          border-bottom: 1px dashed var(--global-text-color);
+        }
+      }
+    }
+
+    .periodical {
+      font-size: 0.85rem;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.3rem;
+
+      em {
+        font-style: italic;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-top: 0.3rem;
+
+      a.btn {
+        font-size: 0.75rem;
+        padding: 0.15rem 0.5rem;
+        border: 1px solid var(--global-divider-color);
+        border-radius: 3px;
+        color: var(--global-text-color-light);
+        text-decoration: none;
+        background: none;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: var(--global-theme-color);
+          border-color: var(--global-theme-color);
+          text-decoration: none;
+        }
+      }
+    }
+
+    .hidden {
+      font-size: 0.85rem;
+      max-height: 0px;
+      overflow: hidden;
+      transition: all 0.15s ease;
+
+      p {
+        line-height: 1.4em;
+        margin: 10px 0;
+      }
+      pre {
+        font-size: 0.85em;
+        line-height: 1.4em;
+        padding: 10px;
+      }
+    }
+
+    .hidden.open {
+      max-height: 100em;
+      transition: all 0.15s ease;
+    }
+
+    div.abstract.hidden {
+      border: dashed 1px var(--global-bg-color);
+    }
+    div.abstract.hidden.open {
+      border-color: var(--global-text-color);
+    }
+  }
+}
+
+// Responsive: stack pub cards on mobile
+@media (max-width: 480px) {
+  .pub-card {
+    flex-direction: column;
+
+    .pub-thumbnail {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+// ─── Footer ──────────────────────────────────────────────────────────────────
+
+.storyline-footer {
+  border-top: 1px solid var(--global-divider-color);
+  padding: 2rem 0;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+
+  a {
+    color: var(--global-text-color-light);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// ─── CV Page Overrides ───────────────────────────────────────────────────────
+
+.cv {
+  margin-bottom: 40px;
+
+  .card {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+
+    .list-group-item {
+      background-color: inherit;
+      border-color: var(--global-divider-color);
+
+      .badge {
+        color: var(--global-card-bg-color) !important;
+        background-color: var(--global-theme-color) !important;
+      }
+    }
+  }
+}
+
+// ─── Dark Mode Adjustments ───────────────────────────────────────────────────
+
+html[data-theme='dark'] {
+  .pub-card .pub-thumbnail .venue-placeholder {
+    opacity: 0.85;
+  }
+
+  .storyline-nav {
+    background-color: var(--global-bg-color);
+  }
+}
+
+// ─── Utility ─────────────────────────────────────────────────────────────────
+
+.text-muted {
+  color: var(--global-text-color-light) !important;
+}
+
+// Keep Bootstrap grid functional but override container width
+@media (min-width: 576px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
