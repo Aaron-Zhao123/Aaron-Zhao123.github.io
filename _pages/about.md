@@ -11,7 +11,7 @@ profile:
 social: true
 ---
 
-## Professional WorkTree
+## Timeline
 
 <div class="git-timeline">
 
@@ -28,7 +28,7 @@ social: true
     <div class="timeline-body">
       <div class="timeline-period">2022 -- Present</div>
       <div class="timeline-role">Assistant Professor, Imperial College London</div>
-      <div class="timeline-detail">Department of EEE. Leading the <a href="https://deepwok.github.io/">DeepWok Lab</a>, focused on efficient AI, hardware-algorithm co-design, and ML security. The team publishes consistently at top-tier ML venues (NeurIPS, ICML, ICLR) and also at leading security (USENIX) and hardware/systems venues (MLSys, ISCA). Leading a lab of more than 10 PhD and 10 Master students, with a collective PI and Co-I funding of above £10M.</div>
+      <div class="timeline-detail">Department of EEE. Leading the <a href="https://deepwok.github.io/">DeepWok Lab</a>, focused on efficient AI, hardware-algorithm co-design, and ML security. The team publishes consistently at top-tier ML venues (NeurIPS, ICML, ICLR) and also at leading security (USENIX, S&amp;P, SaTML) and hardware/systems venues (MLSys, ISCA). Leading a lab of more than 10 PhD and 10 Master students, with a collective PI and Co-I funding of above £10M.</div>
     </div>
   </div>
 </div>
@@ -234,7 +234,7 @@ social: true
     <div class="timeline-body">
       <div class="timeline-period">2013 -- 2016</div>
       <div class="timeline-role">BEng in Electrical & Electronic Engineering, Imperial College London</div>
-      <div class="timeline-detail">Final years supervised by <a href="https://cas.ee.ic.ac.uk/people/gac1/">Prof. George Constantinides</a>. Won the Willis Jackson Medal and Prize for academic performance.</div>
+      <div class="timeline-detail">Final years supervised by <a href="https://cas.ee.ic.ac.uk/people/gac1/">Prof. George Constantinides</a>. Won the Willis Jackson Medal and Prize for academic performance. Final year project <a href="https://ieeexplore.ieee.org/document/7929191">published at FPT 2016</a>.</div>
     </div>
   </div>
 </div>

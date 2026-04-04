@@ -36,6 +36,8 @@
         {%- assign venue_class = "venue-nlp" -%}{%- assign venue_label = "EMNLP" -%}
       {%- elsif entry.booktitle contains "EuroS" or entry.booktitle contains "European Symposium on Security" -%}
         {%- assign venue_class = "venue-security" -%}{%- assign venue_label = "EuroS&P" -%}
+      {%- elsif entry.booktitle contains "IEEE Symposium on Security and Privacy" or entry.booktitle contains "S&P" -%}
+        {%- assign venue_class = "venue-security" -%}{%- assign venue_label = "S&P" -%}
       {%- elsif entry.booktitle contains "SaTML" or entry.booktitle contains "Trustworthy Machine Learning" -%}
         {%- assign venue_class = "venue-security" -%}{%- assign venue_label = "SaTML" -%}
       {%- elsif entry.booktitle contains "USENIX" -%}
@@ -52,6 +54,8 @@
         {%- assign venue_class = "venue-systems" -%}{%- assign venue_label = "ICFPT" -%}
       {%- elsif entry.booktitle contains "ISPASS" -%}
         {%- assign venue_class = "venue-systems" -%}{%- assign venue_label = "ISPASS" -%}
+      {%- elsif entry.booktitle contains "EuroMLSys" -%}
+        {%- assign venue_class = "venue-systems" -%}{%- assign venue_label = "EuroMLSys" -%}
       {%- elsif entry.booktitle contains "MLSys" or entry.booktitle contains "Systems and Machine Learning" -%}
         {%- assign venue_class = "venue-systems" -%}{%- assign venue_label = "MLSys" -%}
       {%- elsif entry.booktitle contains "ISCA" -%}
@@ -62,10 +66,12 @@
         {%- assign venue_class = "venue-security" -%}{%- assign venue_label = "DSN-W" -%}
       {%- elsif entry.booktitle contains "ARC" or entry.booktitle contains "Applied Reconfigurable Computing" -%}
         {%- assign venue_class = "venue-systems" -%}{%- assign venue_label = "ARC" -%}
-      {%- elsif entry.booktitle contains "Learning on Graphs" -%}
+      {%- elsif entry.booktitle contains "Learning on Graphs Conference" or entry.booktitle contains "LoG 20" -%}
         {%- assign venue_class = "venue-graph" -%}{%- assign venue_label = "LoG" -%}
       {%- elsif entry.booktitle contains "ECAI" -%}
         {%- assign venue_class = "venue-ai" -%}{%- assign venue_label = "ECAI" -%}
+      {%- elsif entry.booktitle contains "AAAI" -%}
+        {%- assign venue_class = "venue-ai" -%}{%- assign venue_label = "AAAI" -%}
       {%- elsif entry.journal contains "Nature" -%}
         {%- assign venue_class = "venue-journal" -%}{%- assign venue_label = "Nature" -%}
       {%- elsif entry.journal contains "Neural Information Processing" or entry.journal contains "Advances in Neural Information" -%}
@@ -81,6 +87,9 @@
       {%- endif -%}
       {%- if venue_label != "" %}
       <span class="venue-tag {{ venue_class }}">{{ venue_label }}</span>
+      {%- endif %}
+      {%- if entry.booktitle contains "Workshop" or entry.booktitle contains "workshop" %}
+      <span class="venue-tag venue-workshop">Workshop</span>
       {%- endif %}
     </div>
 
