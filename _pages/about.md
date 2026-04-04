@@ -28,7 +28,7 @@ social: true
     <div class="timeline-body">
       <div class="timeline-period">2022 -- Present</div>
       <div class="timeline-role">Assistant Professor, Imperial College London</div>
-      <div class="timeline-detail">Department of EEE. Leading the <a href="https://deepwok.github.io/">DeepWok Lab</a>, focused on efficient AI, hardware-algorithm co-design, and ML security. The team publishes consistently at top-tier ML venues (NeurIPS, ICML, ICLR) and also at leading security (USENIX, S&amp;P, SaTML) and hardware/systems venues (MLSys, ISCA). Leading a lab of more than 10 PhD and 10 Master students, with a collective PI and Co-I funding of above £10M.</div>
+      <div class="timeline-detail">Department of Electrical and Electronic Engineering. Leading the <a href="https://deepwok.github.io/">DeepWok Lab</a> — a research lab focused on efficient AI, hardware-algorithm co-design, and AI security — with 10+ PhD and 10+ Master students and collective PI/Co-I funding above £10M.</div>
     </div>
   </div>
 </div>
@@ -82,23 +82,7 @@ social: true
   <div class="git-content"></div>
 </div>
 
-<!-- ═══ Single trunk: JRF ═══ -->
-<div class="git-row">
-  <div class="git-graph">
-    <div class="git-lane lane-0"></div>
-    <div class="git-dot lane-0"></div>
-  </div>
-  <div class="git-content">
-    <div class="timeline-logo"><img src="/assets/img/logos/stjohns.png" alt="St John's"></div>
-    <div class="timeline-body">
-      <div class="timeline-period">2021 -- 2022</div>
-      <div class="timeline-role">Junior Research Fellow, St John's College, Cambridge</div>
-      <div class="timeline-detail">College research fellowship in computer science.</div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══ Fork: trunk → internship branch ═══ -->
+<!-- ═══ Fork: trunk → PhD branch ═══ -->
 <div class="git-row spacer">
   <div class="git-graph">
     <div class="git-lane lane-0"></div>
@@ -123,6 +107,23 @@ social: true
       <div class="timeline-period">2017 -- 2022</div>
       <div class="timeline-role">PhD in Computer Science, University of Cambridge</div>
       <div class="timeline-detail">Supervised by <a href="https://www.cl.cam.ac.uk/~rdm34/">Prof. Robert Mullins</a>. Thesis: Software and Hardware Co-design for Efficient Neural Networks.</div>
+    </div>
+  </div>
+</div>
+
+<!-- JRF — lane 1 (branch, overlaps with PhD) -->
+<div class="git-row">
+  <div class="git-graph">
+    <div class="git-lane lane-0"></div>
+    <div class="git-lane lane-1"></div>
+    <div class="git-dot lane-1"></div>
+  </div>
+  <div class="git-content">
+    <div class="timeline-logo"><img src="/assets/img/logos/stjohns.png" alt="St John's"></div>
+    <div class="timeline-body">
+      <div class="timeline-period">2021 -- 2022</div>
+      <div class="timeline-role">Junior Research Fellow, St John's College, Cambridge</div>
+      <div class="timeline-detail">College research fellowship in computer science.</div>
     </div>
   </div>
 </div>
@@ -245,9 +246,11 @@ social: true
 
 ## Research
 
-My research sits at the intersection of **hardware, algorithms, and security** in machine learning. On the **efficient AI** side, I work on algorithmic designs — quantization, pruning, architecture search — as well as building AI accelerators. Our open-source framework [MASE](https://github.com/DeepWok/mase) enables cross-stack ML acceleration research, and [PLENA](https://github.com/AICrossSim/PLENA) is our AI inference accelerator system. On the **AI security** side, I study adversarial robustness, architectural backdoors, and model collapse in recursively trained systems (published in [Nature](https://www.nature.com/articles/s41586-024-07566-y)).
+My research sits at the intersection of **hardware, algorithms, and security** in machine learning, with work regularly appearing at NeurIPS, ICML, and ICLR, and at leading security venues (USENIX, S&P, SaTML), hardware/systems venues (MLSys, ISCA), and journals including [Nature](https://www.nature.com/articles/s41586-024-07566-y).
 
-I review and serve as Area Chair for ICLR, ICML, NeurIPS, CVPR, and other venues.
+On the **efficient AI** side, I work on algorithmic designs spanning quantization, pruning, and neural architecture search, as well as building hardware accelerators. Our open-source framework [MASE](https://github.com/DeepWok/mase) enables cross-stack ML acceleration research; [PLENA](https://github.com/AICrossSim/PLENA) is the first fully open AI accelerator system, covering full RTL, simulator, and compilers. On the **AI security** side, I study adversarial robustness, architectural backdoors, and model collapse in recursively trained systems.
+
+I serve as Area Chair for ICLR, ICML, NeurIPS, and CVPR.
 
 ---
 
