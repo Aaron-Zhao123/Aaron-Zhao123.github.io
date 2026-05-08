@@ -15,25 +15,25 @@ social: true
 
 <div class="git-timeline">
 
-<!-- ═══ 3 parallel branches (current roles) ═══ -->
+<!-- ═══ Current roles (3 parallel, all ongoing) ═══ -->
 
-<!-- Imperial — lane 0, lanes 1+2 start below -->
+<!-- Meta — lane 0 -->
 <div class="git-row">
   <div class="git-graph">
     <div class="git-lane lane-0"></div>
     <div class="git-dot lane-0"></div>
   </div>
   <div class="git-content">
-    <div class="timeline-logo"><img src="/assets/img/logos/imperial.png" alt="Imperial"></div>
+    <div class="timeline-logo"><img src="/assets/img/logos/meta.jpg" alt="Meta"></div>
     <div class="timeline-body">
-      <div class="timeline-period">2022 -- Present</div>
-      <div class="timeline-role">Assistant Professor, Imperial College London</div>
-      <div class="timeline-detail">Department of Electrical and Electronic Engineering. Leading the <a href="https://deepwok.github.io/">DeepWok Lab</a> — a research lab focused on efficient AI, hardware-algorithm co-design, and AI security — with 10+ PhD and 10+ Master students and collective PI/Co-I funding above £10M.</div>
+      <div class="timeline-period">May 2026 -- Present</div>
+      <div class="timeline-role">Senior Staff Software Engineer, Meta</div>
+      <div class="timeline-detail">Working on scaling AI for security and security for AI.</div>
     </div>
   </div>
 </div>
 
-<!-- Sequrity — lane 1 active -->
+<!-- Honorary Professor — lane 1 -->
 <div class="git-row">
   <div class="git-graph">
     <div class="git-lane lane-0"></div>
@@ -41,16 +41,16 @@ social: true
     <div class="git-dot lane-1"></div>
   </div>
   <div class="git-content">
-    <div class="timeline-logo"><img src="/assets/img/logos/sequrity.png" alt="Sequrity AI"></div>
+    <div class="timeline-logo"><img src="/assets/img/logos/imperial.png" alt="Imperial"></div>
     <div class="timeline-body">
-      <div class="timeline-period">Sep 2025 -- Present</div>
-      <div class="timeline-role">Co-founder, <a href="https://sequrity.ai/">Sequrity AI</a></div>
-      <div class="timeline-detail">Building the first secure AI agentic flows.</div>
+      <div class="timeline-period">Apr 2026 -- Present</div>
+      <div class="timeline-role">Honorary Professor, Imperial College London</div>
+      <div class="timeline-detail">Co-supervising PhDs and advising on ongoing projects in the <a href="https://deepwok.github.io/">DeepWok Lab</a>.</div>
     </div>
   </div>
 </div>
 
-<!-- Cambridge visiting — lane 2 active -->
+<!-- Cambridge visiting — lane 2 -->
 <div class="git-row">
   <div class="git-graph">
     <div class="git-lane lane-0"></div>
@@ -68,7 +68,69 @@ social: true
   </div>
 </div>
 
-<!-- ═══ Merge: 3 → 1 ═══ -->
+<!-- ═══ Merge: lanes 0,1 → 0; lane-2 (Cambridge) passes through ═══ -->
+<div class="git-row spacer">
+  <div class="git-graph">
+    <div class="git-lane lane-0"></div>
+    <div class="git-lane lane-1 top-half"></div>
+    <div class="git-lane lane-2"></div>
+    <svg class="git-svg" xmlns="http://www.w3.org/2000/svg">
+      <line x1="38" y1="50%" x2="17" y2="50%" class="s1"/>
+    </svg>
+  </div>
+  <div class="git-content"></div>
+</div>
+
+<!-- ═══ Fork: trunk → Sequrity branch; lane-2 passes through ═══ -->
+<div class="git-row spacer">
+  <div class="git-graph">
+    <div class="git-lane lane-0"></div>
+    <div class="git-lane lane-1 bottom-half"></div>
+    <div class="git-lane lane-2"></div>
+    <svg class="git-svg" xmlns="http://www.w3.org/2000/svg">
+      <line x1="17" y1="50%" x2="38" y2="50%" class="s1"/>
+    </svg>
+  </div>
+  <div class="git-content"></div>
+</div>
+
+<!-- Sequrity — lane 1 (branch); lane-2 (Cambridge) passes through -->
+<div class="git-row">
+  <div class="git-graph">
+    <div class="git-lane lane-0"></div>
+    <div class="git-lane lane-1"></div>
+    <div class="git-lane lane-2"></div>
+    <div class="git-dot lane-1"></div>
+  </div>
+  <div class="git-content">
+    <div class="timeline-logo"><img src="/assets/img/logos/sequrity.png" alt="Sequrity AI"></div>
+    <div class="timeline-body">
+      <div class="timeline-period">Sep 2025 -- Apr 2026</div>
+      <div class="timeline-role">Co-founder, <a href="https://sequrity.ai/">Sequrity AI</a></div>
+      <div class="timeline-detail">Built the first secure AI agentic flows. Acquired Apr 2026.</div>
+    </div>
+  </div>
+</div>
+
+<!-- AP Imperial — lane 0 (trunk); lane-2 (Cambridge) passes through -->
+<div class="git-row">
+  <div class="git-graph">
+    <div class="git-lane lane-0"></div>
+    <div class="git-lane lane-1"></div>
+    <div class="git-lane lane-2"></div>
+    <div class="git-dot lane-0"></div>
+  </div>
+  <div class="git-content">
+    <div class="timeline-logo"><img src="/assets/img/logos/imperial.png" alt="Imperial"></div>
+    <div class="timeline-body">
+      <div class="timeline-period">2022 -- Apr 2026</div>
+      <div class="timeline-role">Assistant Professor, Imperial College London</div>
+      <div class="timeline-detail">Department of Electrical and Electronic Engineering. Led the <a href="https://deepwok.github.io/">DeepWok Lab</a> — a research lab focused on efficient AI, hardware-algorithm co-design, and AI security — with 10+ PhD and 10+ Master students and collective PI/Co-I funding above £10M.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ Merge: Sequrity lane-1 + Cambridge lane-2 → trunk ═══ -->
 <div class="git-row spacer">
   <div class="git-graph">
     <div class="git-lane lane-0"></div>
