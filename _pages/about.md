@@ -107,7 +107,7 @@ social: true
     <div class="timeline-body">
       <div class="timeline-period">Sep 2025 -- Apr 2026</div>
       <div class="timeline-role">Co-founder, <a href="https://sequrity.ai/">Sequrity AI</a></div>
-      <div class="timeline-detail">Built the first secure AI agentic flows. Acquired Apr 2026.</div>
+      <div class="timeline-detail">Built the first secure AI agentic flows.</div>
     </div>
   </div>
 </div>
