@@ -27,8 +27,8 @@ social: true
     <div class="timeline-logo"><img src="/assets/img/logos/meta.jpg" alt="Meta"></div>
     <div class="timeline-body">
       <div class="timeline-period">May 2026 -- Present</div>
-      <div class="timeline-role">Senior Staff Software Engineer, Meta</div>
-      <div class="timeline-detail">Red-teaming, preparedness and evaluation across the Muse family, from the base models (Muse Spark <a href="https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report/">1.1</a>, <a href="https://dev.meta.ai/models/muse-spark-1-2">1.2</a>, <a href="https://dev.meta.ai/models/muse-spark">1.3</a>, <a href="https://dev.meta.ai/models/muse-spark-open">Open</a> and <a href="https://research.meta.ai/blog/muse-wonder">Muse Wonder</a>) to the products built on them, such as the <a href="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/">Muse personal AI agent</a>.</div>
+      <div class="timeline-role">Senior Staff Software Engineer (E7), Meta</div>
+      <div class="timeline-detail">On the AI Security team in Central Security, working on red-teaming and evaluation for the Muse family, from the base models (Muse Spark <a href="https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report/">1.1</a>, <a href="https://dev.meta.ai/models/muse-spark-1-2">1.2</a>, <a href="https://dev.meta.ai/models/muse-spark">1.3</a>, <a href="https://dev.meta.ai/models/muse-spark-open">Open</a> and <a href="https://research.meta.ai/blog/muse-wonder">Muse Wonder</a>) to the products built on them, such as the <a href="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/">Muse personal AI agent</a>.</div>
     </div>
   </div>
 </div>
@@ -106,7 +106,7 @@ social: true
     <div class="timeline-logo"><img src="/assets/img/logos/sequrity.png" alt="Sequrity AI"></div>
     <div class="timeline-body">
       <div class="timeline-period">Sep 2025 -- Apr 2026</div>
-      <div class="timeline-role">Co-founder, <a href="https://sequrity.ai/">Sequrity AI</a></div>
+      <div class="timeline-role">Co-founder and CTO, Sequrity AI</div>
       <div class="timeline-detail">Built the first secure AI agentic flows.</div>
     </div>
   </div>
@@ -125,7 +125,7 @@ social: true
     <div class="timeline-body">
       <div class="timeline-period">2022 -- Apr 2026</div>
       <div class="timeline-role">Assistant Professor, Imperial College London</div>
-      <div class="timeline-detail">Department of Electrical and Electronic Engineering. Led the <a href="https://deepwok.github.io/">DeepWok Lab</a> — a research lab focused on efficient AI, hardware-algorithm co-design, and AI security — with 10+ PhD and 10+ Master students and collective PI/Co-I funding above £10M.</div>
+      <div class="timeline-detail"><a href="https://www.imperial.ac.uk/electrical-engineering/">Department of Electrical and Electronic Engineering</a>. Led the <a href="https://deepwok.github.io/">DeepWok Lab</a> — a research lab focused on efficient AI, hardware-algorithm co-design, and AI security — with 10+ PhD and 10+ Master students and collective PI/Co-I funding above £10M.</div>
     </div>
   </div>
 </div>
