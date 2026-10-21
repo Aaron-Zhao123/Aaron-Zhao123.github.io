@@ -1,0 +1,121 @@
+{%- assign vc = site.data.venue_counts -%}
+{%- if vc and vc.total > 0 -%}
+<!-- _includes/venue_chart.html -->
+<figure class="venue-chart" aria-label="Papers by venue">
+  <div class="venue-chart-body">
+    <div class="venue-donut">
+      <svg viewBox="0 0 200 200" role="img" aria-label="Donut chart of papers by venue"></svg>
+      <div class="venue-donut-center" aria-hidden="true">
+        <span class="venue-donut-count">{{ vc.total }}</span>
+        <span class="venue-donut-label">papers</span>
+      </div>
+      <div class="venue-tooltip" role="presentation" hidden></div>
+    </div>
+
+    <ul class="venue-legend">
+      {%- for row in vc.rows %}
+      <li>
+        <button type="button" class="venue-legend-item" data-venue="{{ row.name }}" data-count="{{ row.count }}" data-slot="{{ row.slot }}" data-shade="{{ row.shade }}" data-area="{{ row.area_label }}" aria-pressed="false" aria-controls="venue-papers">
+          <span class="venue-swatch slot-{{ row.slot }} shade-{{ row.shade }}" aria-hidden="true"></span>
+          <span class="venue-name">{{ row.name }}</span>
+          <span class="venue-count">{{ row.count }}</span>
+        </button>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+
+  <div id="venue-papers" class="venue-papers" aria-live="polite">
+    <p class="venue-papers-hint">Click a venue to see its papers.</p>
+    {%- for row in vc.rows %}
+    <div class="venue-papers-list" data-venue="{{ row.name }}" hidden>
+      <div class="venue-papers-head">
+        <span class="venue-swatch slot-{{ row.slot }} shade-{{ row.shade }}" aria-hidden="true"></span>
+        {{ row.name }} <span class="venue-papers-area">{{ row.area_label }}</span><span class="venue-papers-n">· {{ row.count }} paper{% if row.count != 1 %}s{% endif %}</span>
+      </div>
+      <ol>
+        {%- for p in row.papers %}
+        <li><span class="venue-paper-title">{{ p.title }}</span><span class="venue-paper-year">{{ p.year }}</span></li>
+        {%- endfor %}
+      </ol>
+    </div>
+    {%- endfor %}
+  </div>
+</figure>
+
+<script>
+  (function () {
+    var root = document.querySelector(".venue-chart");
+    if (!root) return;
+    var svg = root.querySelector("svg");
+    var donut = root.querySelector(".venue-donut");
+    var tip = root.querySelector(".venue-tooltip");
+    var buttons = Array.prototype.slice.call(root.querySelectorAll(".venue-legend-item"));
+    var hint = root.querySelector(".venue-papers-hint");
+    var lists = Array.prototype.slice.call(root.querySelectorAll(".venue-papers-list"));
+    var NS = "http://www.w3.org/2000/svg";
+    var total = buttons.reduce(function (s, b) { return s + Number(b.dataset.count); }, 0);
+    var cx = 100, cy = 100, r = 92, inner = 58;
+    var selected = null;
+    var slices = {};
+
+    function point(radius, angle) {
+      return [cx + radius * Math.sin(angle), cy - radius * Math.cos(angle)];
+    }
+
+    function arc(a0, a1) {
+      var large = a1 - a0 > Math.PI ? 1 : 0;
+      var p0 = point(r, a0), p1 = point(r, a1), p2 = point(inner, a1), p3 = point(inner, a0);
+      return "M" + p0 + "A" + r + "," + r + " 0 " + large + " 1 " + p1 +
+             "L" + p2 + "A" + inner + "," + inner + " 0 " + large + " 0 " + p3 + "Z";
+    }
+
+    var angle = 0;
+    buttons.forEach(function (b) {
+      var sweep = (Number(b.dataset.count) / total) * Math.PI * 2;
+      var path = document.createElementNS(NS, "path");
+      path.setAttribute("d", arc(angle, angle + sweep));
+      path.setAttribute("class", "venue-slice slot-" + b.dataset.slot + " shade-" + b.dataset.shade);
+      path.dataset.venue = b.dataset.venue;
+      path.dataset.count = b.dataset.count;
+      path.dataset.area = b.dataset.area;
+      svg.appendChild(path);
+      slices[b.dataset.venue] = path;
+      angle += sweep;
+    });
+
+    function select(venue) {
+      selected = selected === venue ? null : venue;
+      root.classList.toggle("has-selection", !!selected);
+      buttons.forEach(function (b) {
+        var on = b.dataset.venue === selected;
+        b.setAttribute("aria-pressed", on);
+        slices[b.dataset.venue].classList.toggle("is-selected", on);
+      });
+      hint.hidden = !!selected;
+      lists.forEach(function (l) { l.hidden = l.dataset.venue !== selected; });
+    }
+
+    svg.addEventListener("mousemove", function (e) {
+      var s = e.target.closest(".venue-slice");
+      if (!s) { tip.hidden = true; return; }
+      var box = donut.getBoundingClientRect();
+      tip.textContent = s.dataset.venue + " (" + s.dataset.area + ") · " + s.dataset.count + " paper" + (s.dataset.count === "1" ? "" : "s");
+      tip.style.left = (e.clientX - box.left) + "px";
+      tip.style.top = (e.clientY - box.top) + "px";
+      tip.hidden = false;
+    });
+    svg.addEventListener("mouseleave", function () { tip.hidden = true; });
+    svg.addEventListener("click", function (e) {
+      var s = e.target.closest(".venue-slice");
+      if (s) select(s.dataset.venue);
+    });
+    buttons.forEach(function (b) {
+      var slice = slices[b.dataset.venue];
+      b.addEventListener("click", function () { select(b.dataset.venue); });
+      b.addEventListener("mouseenter", function () { slice.classList.add("is-hover"); });
+      b.addEventListener("mouseleave", function () { slice.classList.remove("is-hover"); });
+    });
+  })();
+</script>
+{%- endif -%}

@@ -2,6 +2,7 @@
 ---
 <!-- _layouts/bib.html -->
 <div class="pub-card">
+  {%- unless page.hide_previews %}
   <div class="pub-thumbnail">
     {%- if entry.preview -%}
     {% if entry.preview contains '://' -%}
@@ -11,6 +12,8 @@
     {%- endif -%}
     {%- endif -%}
   </div>
+
+  {%- endunless %}
 
   <div class="pub-info">
     <!-- Title + Venue tag -->
