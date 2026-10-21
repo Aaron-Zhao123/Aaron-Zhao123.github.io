@@ -308,7 +308,7 @@ social: true
 
 ## Research
 
-My research sits at the intersection of **hardware, algorithms, and security** in machine learning, with work regularly appearing at NeurIPS, ICML, and ICLR, and at leading security venues (USENIX, S&P, SaTML), hardware/systems venues (MLSys, ISCA), and journals including [Nature](https://www.nature.com/articles/s41586-024-07566-y).
+My research sits at the intersection of **hardware, algorithms, and security** in machine learning, with work regularly appearing at NeurIPS, ICML, and ICLR, and at leading security venues (S&P, EuroS&P, SaTML), hardware/systems venues (MLSys, ISCA), and journals including [Nature](https://www.nature.com/articles/s41586-024-07566-y).
 
 On the **efficient AI** side, I work on algorithmic designs spanning quantization, pruning, and neural architecture search, as well as building hardware accelerators. Our open-source framework [MASE](https://github.com/DeepWok/mase) enables cross-stack ML acceleration research; [PLENA](https://github.com/AICrossSim/PLENA) is the first fully open AI accelerator system, covering full RTL, simulator, and compilers. On the **AI security** side, I study adversarial robustness, architectural backdoors, and model collapse in recursively trained systems.
 
