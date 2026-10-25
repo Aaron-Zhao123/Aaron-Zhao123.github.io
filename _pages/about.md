@@ -27,8 +27,8 @@ social: true
     <div class="timeline-logo"><img src="/assets/img/logos/meta.jpg" alt="Meta"></div>
     <div class="timeline-body">
       <div class="timeline-period">May 2026 -- Present</div>
-      <div class="timeline-role">Senior Staff Software Engineer (E7), Meta</div>
-      <div class="timeline-detail">On the AI Security team in Central Security, working on red-teaming and evaluation for the Muse family, from the base models (Muse Spark <a href="https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report/">1.1</a>, <a href="https://dev.meta.ai/models/muse-spark-1-2">1.2</a>, <a href="https://dev.meta.ai/models/muse-spark">1.3</a>, <a href="https://dev.meta.ai/models/muse-spark-open">Open</a> and <a href="https://research.meta.ai/blog/muse-wonder">Muse Wonder</a>) to the products built on them, such as the <a href="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/">Muse personal AI agent</a>.</div>
+      <div class="timeline-role">Senior Staff Software Engineer, Meta</div>
+      <div class="timeline-detail">On the AI Team at Central Security, working on red-teaming and evaluation for the Muse family, from the base models, Muse Spark 1.1 (<a href="https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/">blog</a>, <a href="https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report/">report</a>), 1.2 (<a href="https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2">blog</a>), 1.3 (<a href="https://research.meta.ai/blog/introducing-muse-spark-1-3">blog</a>, <a href="https://research.meta.ai/static/muse-spark-1-3-evaluation-report/">report</a>), Open (<a href="https://research.meta.ai/blog/muse-spark-open">blog</a>) and Muse Wonder (<a href="https://research.meta.ai/blog/muse-wonder">blog</a>), to the products built on them, such as the <a href="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/">Muse personal AI agent</a>.</div>
     </div>
   </div>
 </div>
