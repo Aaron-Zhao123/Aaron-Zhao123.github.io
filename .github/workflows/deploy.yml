@@ -10,20 +10,22 @@ on:
       - master
       - main
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      BUNDLE_FROZEN: "true"
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
     - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
+      uses: ruby/setup-ruby@7f797815d8adceb1c412e7abefdd1ab4abc47a5f # v1.335.0
       with:
-        ruby-version: '3.2.2'
+        ruby-version: '3.4'
         bundler-cache: true
-    - name: Install deps
-      run: |
-        npm install -g mermaid.cli
     - name: Setup deploy options
       id: setup
       run: |
